@@ -31,8 +31,19 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
-    {
-        assertTrue( true );
+    public void testConfig()
+    {    	
+    	
+    	ReadConfig config = new ReadConfig();
+        assertNotNull( config.getNumberOfIterations() );
     }
+    
+    public void testPi()
+    {    	    	
+    	ApproxPi pi = new ApproxPi();
+    	//testing algorithm to 15 decimal places
+    	assertEquals(3.141392653591791, pi.getPi(10000.0), 0.000000000000001);
+    }
+    
+   
 }
