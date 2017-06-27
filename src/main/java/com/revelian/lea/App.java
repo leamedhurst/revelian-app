@@ -13,8 +13,7 @@ public class App {
 			ReadConfig configVar = new ReadConfig();
 
 			// Run the algorithm
-			ApproxPi pi = new ApproxPi();
-			System.out.println(configVar.getNumberOfIterations());
+			ApproxPi pi = new ApproxPi();			
 			System.out.println(pi.getPi(configVar.getNumberOfIterations()));
 		//} catch (Exception e) {
 		//	System.out.println("Couldn't find the value of pi , see below");
